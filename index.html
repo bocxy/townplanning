@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+
+<!-- // Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+<script type="text/javascript" src="./index.js"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- ...........navbar.......... -->
+<nav class="navbar navbar-expand-lg navbar-light "style="background-color: #1a237e;">
+    <a class="navbar-brand text-white" href="#">Town Planning Department</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active text-white" href="./login.html">Login</a>
+      </div>
+    </div>
+  </nav>
+<!-- ..............navbar..........  -->
+    
+    <div class="card bg-light ">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+            <p class="text-center ">Get started with your account</p>
+            <form>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                 </div>
+                <input name="" class="form-control" placeholder="Full name" type="text">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                 </div>
+                <input name="" class="form-control" placeholder="Email address" type="email">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                </div>
+                <select class="custom-select" style="max-width: 120px;">
+                    <option selected="">+971</option>
+                    <option value="1">+972</option>
+                    <option value="2">+198</option>
+                    <option value="3">+701</option>
+                </select>
+                <input name="" class="form-control" placeholder="Phone number" type="text">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                </div>
+                <select class="form-control">
+                    <option selected=""> Select job type</option>
+                    <option>Designer</option>
+                    <option>Manager</option>
+                    <option>Accaunting</option>
+                </select>
+            </div> <!-- form-group end.// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder="Create password" type="password">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder="Repeat password" type="password">
+            </div> <!-- form-group// -->                                      
+            <div class="form-group">
+               <a href="./login.html"> <button type="submit" class="btn btn-primary btn-block"> Create Account  </button></a>
+            </div> <!-- form-group// -->      
+            <p class="text-center ">Have an account? <a href="./login.html">Log In</a> </p>                                                                 
+        </form>
+        </article>
+        </div> <!-- card.// -->
+        </div> 
+        <!--container end.//-->
+            <!--CARAOUSAL START -->
+
+    <!-- <div class="wrapper bg-dark">
+        <div class="carousel">
+          <div><img src="./assets/slide2.jpg"></div>
+          <div><img src="./assets/slide3.jpg"></div>
+          <div><img src="./assets/1.jpg"></div>
+          <div><img src="./assets/er.jpg"></div>
+          <div><img src="./assets/Presentation1_0.jpg"></div>
+          <div><img src="./assets/shai-pal-bGphNIzQ5OA-unsplash.jpg"></div>
+        </div>
+  </div> -->
+<!--CARAOUSAL END -->
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+    $('.carousel').slick({
+    slidesToShow: 3,
+    dots:true,
+    centerMode: true,
+    });
+  });
+  
+  // Slick version 1.5.8
+        </script>
+</body>
+</html>
