@@ -5,120 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="./loginstyle.css">
+ 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
-
-<!-- // Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
-<script type="text/javascript" src="./index.js"></script>
-<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- ...........navbar.......... -->
-<nav class="navbar navbar-expand-lg navbar-light "style="background-color: #1a237e;">
-    <a class="navbar-brand text-white" href="#">Town Planning Department</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active text-white" href="./login.html">Login</a>
-      </div>
-    </div>
-  </nav>
-<!-- ..............navbar..........  -->
-    
-    <div class="card bg-light ">
-        <article class="card-body mx-auto" style="max-width: 400px;">
-            <h4 class="card-title mt-3 text-center">Create Account</h4>
-            <p class="text-center ">Get started with your account</p>
-            <form>
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Full name" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Email address" type="email">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+    <section>
+        <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+            <div class="card card0 border-0">
+                <div class="row d-flex">
+                    <div class="col-lg-6">
+                        <div class="card1 pb-5">
+                            <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="./assets/uNGdWHi.png" class="image"> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card2 card border-0 px-4 py-5">
+                            <div class="row mb-4 px-3">
+                            </div>
+                            <div class="row px-3"> <label class="mb-1">
+                                    <h6 class="mb-0 text-sm">Username</h6>
+                                </label> <input class="mb-4" type="text" name="email" placeholder="Enter your username" id="username"> </div>
+                            <div class="row px-3"> <label class="mb-1">
+                                    <h6 class="mb-0 text-sm">Password</h6>
+                                </label> <input type="password" name="password" placeholder="Enter password" id="password"> </div>
+                            <div class="row px-3 mb-4">
+                                <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                            </div>
+                            <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center" value="login" onclick="validation()">Login</button> </div>
+                            <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="./index.html">Register</a></small> </div>
+                        </div>
+                    </div>
                 </div>
-                <select class="custom-select" style="max-width: 120px;">
-                    <option selected="">+971</option>
-                    <option value="1">+972</option>
-                    <option value="2">+198</option>
-                    <option value="3">+701</option>
-                </select>
-                <input name="" class="form-control" placeholder="Phone number" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                <div class="bg-blue py-4">
+                    <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights reserved.</small>
+                        <div class="social-contact ml-4 ml-sm-auto"> <span class="fa fa-facebook mr-4 text-sm"></span> <span class="fa fa-google-plus mr-4 text-sm"></span> <span class="fa fa-linkedin mr-4 text-sm"></span> <span class="fa fa-twitter mr-4 mr-sm-5 text-sm"></span> </div>
+                    </div>
                 </div>
-                <select class="form-control">
-                    <option selected=""> Select job type</option>
-                    <option>Designer</option>
-                    <option>Manager</option>
-                    <option>Accaunting</option>
-                </select>
-            </div> <!-- form-group end.// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Create password" type="password">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Repeat password" type="password">
-            </div> <!-- form-group// -->                                      
-            <div class="form-group">
-               <a href="./login.html"> <button type="submit" class="btn btn-primary btn-block"> Create Account  </button></a>
-            </div> <!-- form-group// -->      
-            <p class="text-center ">Have an account? <a href="./login.html">Log In</a> </p>                                                                 
-        </form>
-        </article>
-        </div> <!-- card.// -->
-        </div> 
-        <!--container end.//-->
-            <!--CARAOUSAL START -->
-
-    <!-- <div class="wrapper bg-dark">
-        <div class="carousel">
-          <div><img src="./assets/slide2.jpg"></div>
-          <div><img src="./assets/slide3.jpg"></div>
-          <div><img src="./assets/1.jpg"></div>
-          <div><img src="./assets/er.jpg"></div>
-          <div><img src="./assets/Presentation1_0.jpg"></div>
-          <div><img src="./assets/shai-pal-bGphNIzQ5OA-unsplash.jpg"></div>
+            </div>
         </div>
-  </div> -->
-<!--CARAOUSAL END -->
 
-        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
-        <script>
-            $(document).ready(function(){
-    $('.carousel').slick({
-    slidesToShow: 3,
-    dots:true,
-    centerMode: true,
-    });
-  });
-  
-  // Slick version 1.5.8
-        </script>
+    </section>
+
+
+    <script>
+    function validation () {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "client" && password == "123456"){
+            location.href = "dashboard";
+            return false;
+        }
+        else if (username == "officer" && password == "123456"){
+            location.href = "officer-dashboard";
+            return false;
+             }
+             else {
+                    document.write("The email or password is wrong, try again!");
+
+             }
+        }
+    </script>
 </body>
 </html>
