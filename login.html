@@ -27,15 +27,15 @@
                             <div class="row mb-4 px-3">
                             </div>
                             <div class="row px-3"> <label class="mb-1">
-                                    <h6 class="mb-0 text-sm">Email Address</h6>
-                                </label> <input class="mb-4" type="text" name="email" placeholder="Enter a valid email address"> </div>
+                                    <h6 class="mb-0 text-sm">Username</h6>
+                                </label> <input class="mb-4" type="text" name="email" placeholder="Enter your username" id="username"> </div>
                             <div class="row px-3"> <label class="mb-1">
                                     <h6 class="mb-0 text-sm">Password</h6>
-                                </label> <input type="password" name="password" placeholder="Enter password"> </div>
+                                </label> <input type="password" name="password" placeholder="Enter password" id="password"> </div>
                             <div class="row px-3 mb-4">
                                 <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
                             </div>
-                            <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center">Login</button> </div>
+                            <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center" value="login" onclick="validation()">Login</button> </div>
                             <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="./index.html">Register</a></small> </div>
                         </div>
                     </div>
@@ -49,6 +49,25 @@
         </div>
 
     </section>
-   
+
+
+    <script>
+    function validation () {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "client" && password == "123456"){
+            location.href = "www.bocxy.github.io/townplanning/dashboard";
+            return false;
+        }
+        else if (username == "officer" && password == "123456"){
+            location.href = "www.bocxy.github.io/townplanning/officer-dashboard";
+            return false;
+             }
+             else {
+                    document.write("The email or password is wrong, try again!");
+
+             }
+        }
+    </script>
 </body>
 </html>
